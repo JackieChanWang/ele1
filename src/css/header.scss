@@ -1,0 +1,166 @@
+@function rem ( $px ) {
+  @return $px  / 46.875 +  rem;
+}
+
+#header {
+  .header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: rem(268);
+    background-color: rgba(7, 17, 27, .5);
+    /*/ / filter:blur(rem(10));*/
+    overflow: hidden;
+
+    .header1 {
+      position: relative;
+      overflow: hidden;
+      height: rem(212);
+
+      .avatar {
+        float: left;
+        border-radius: rem(4);
+
+        img {
+          margin: rem(48) rem(32) rem(36) rem(48);
+        }
+
+      }
+      .introduction {
+        float: left;
+
+        ul {
+          margin-top: rem(4);
+
+          li:nth-child(1) {
+            margin-top: rem(48);
+            overflow: hidden;
+
+            div {
+              float: left;
+
+            }
+
+            h2 {
+              float: left;
+              font-size: rem(32);
+              color: rgb(255, 255, 255);
+              font-weight: bold;
+              line-height: rem(36);
+              margin-left: rem(12);
+            }
+
+          }
+          li:nth-child(2) {
+            margin-top: rem(16);
+
+            p {
+              font-size: rem(20);
+              color: #fff;
+              line-height: rem(24);
+              font-weight: 200;
+            }
+
+          }
+          li:nth-child(3) {
+            overflow: hidden;
+            clear: both;
+            margin-top: rem(20);
+
+            img {
+              float: left;
+              display: inline-block;
+              margin-bottom: rem(4);
+            }
+
+            .annotated {
+              float: left;
+              font-size: rem(20);
+              color: #fff;
+              font-weight: 200;
+              line-height: rem(24);
+              margin-left: rem(8);
+            }
+
+            p:last-child {
+              position: absolute;
+              bottom: rem(18);
+              right: rem(24);
+              font-size: rem(20);
+              color: #fff;
+              font-weight: 200;
+              line-height: rem(24);
+              padding: rem(14) rem(16);
+              background-color: rgba(0, 0, 0, .2);
+              border-radius: rem(40);
+
+              span {
+                margin-left: rem(4);
+              }
+
+            }
+          }
+        }
+      }
+    }
+    .announcement {
+      overflow: hidden;
+      width: 100%;
+      height: rem(56);
+      background-color: #403C39;
+
+      img {
+        display: block;
+        float: left;
+        margin-left: rem(24);
+        margin-right: rem(8);
+        margin-top: rem(14);
+      }
+
+      p {
+        float: left;
+        width: rem(620);
+        font-size: rem(20);
+        color: #fff;
+        font-weight: 200;
+        line-height: rem(56);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      span {
+        float: left;
+        color: #fff;
+        margin-left: rem(8);
+        line-height: rem(56);
+        font-size: rem(24);
+      }
+
+    }
+  }
+  .nav {
+    padding-top: rem(268);
+    width: 100%;
+    height: rem(80);
+    line-height: rem(80);
+    ul {
+      overflow: hidden;
+      li {
+        float: left;
+        width: 33%;
+        height: rem(80);
+        text-align: center;
+        font-size: rem(28);
+        line-height: rem(80);
+        a{
+          color: rgb(77, 85, 93);
+          text-decoration: none;
+        }
+      }
+      li:first-child {
+        color: rgb(240, 20, 20);
+      }
+    }
+  }
+}

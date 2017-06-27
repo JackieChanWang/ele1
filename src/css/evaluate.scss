@@ -1,0 +1,115 @@
+@function rem ( $fs ) {
+  @return $fs  / 46.875 +  rem;
+}
+
+#evaluate {
+  width: 100%;
+  border-top: 1px solid #E6E7E8;
+  box-sizing: border-box;
+  background-color: #F3F5F7;
+  .score {
+    padding: rem(36) 0;
+    overflow: hidden;
+    background-color: #fff;
+    .score-left {
+      width: rem(275);
+      float: left;
+      text-align: center;
+      border-right: 1px solid #E6E7E8;
+      ul {
+        li:first-child {
+          h2 {
+            font-size: rem(48);
+            color: rgb(255, 153, 0);
+            line-height: rem(56);
+          }
+        }
+        li:nth-child(2) {
+          margin-top: rem(12);
+          p {
+            font-size: rem(24);
+            color: rgb(7, 17, 27);
+            line-height: rem(24);
+          }
+        }
+        li:last-child {
+          margin-top: rem(16);
+          font-size: rem(20);
+          line-height: rem(20);
+          color: #93999F;
+        }
+      }
+    }
+    .vote {
+      float: left;
+      width: rem(378);
+      padding: rem(0) rem(48);
+      .server {
+        li {
+          overflow: hidden;
+          font-size: rem(24);
+          margin-bottom: rem(6);
+          p, .star {
+            float: left;
+          }
+          p {
+            color: rgb(7, 17, 27);
+          }
+          span {
+            margin-left: rem(16);
+            color: rgb(255, 153, 0);
+          }
+          .time {
+            color: #93999F;
+            margin-left: rem(24);
+          }
+          .star {
+            overflow: hidden;
+            margin-left: rem(24);
+            li {
+              float: left;
+              margin-right: rem(8);
+            }
+          }
+        }
+      }
+    }
+  }
+  .evaluate-content {
+    //padding-top: rem(36);
+    width: 100%;
+    height: rem(200);
+    .btn {
+      padding: rem(36) rem(48);
+      li {
+        float: left;
+        width: rem(145);
+        height: rem(75);
+        line-height: rem(75);
+        text-align: center;
+        font-size: rem(28);
+        p {
+          display: inline-block;
+        }
+        span {
+          font-size: rem(20);
+        }
+      }
+      li:first-child {
+        background-color: #00A0DC;
+        color: #fff;
+        span {
+          font-size: rem(20);
+        }
+      }
+      li:nth-child(2) {
+        background-color: #CCECF8;
+        margin-left: rem(20);
+      }
+      li:nth-child(3) {
+        background-color: #E9EBEC;
+        margin-left: rem(20);
+      }
+    }
+  }
+}

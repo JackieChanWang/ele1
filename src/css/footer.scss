@@ -1,0 +1,75 @@
+@function rem ($px) {
+  @return $px/ 46.875 +  rem;
+}
+
+#footer {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: rem(112);
+    background-color: #131D26;
+    padding: 0 0 rem(16) rem(36);
+    .shop-car {
+      padding: rem(12);
+      float: left;
+      border-radius: 50%;
+      background-color: #141D27;
+      margin-top: rem(-30);
+      div {
+        width: rem(88);
+        height: rem(88);
+        border-radius: 50%;
+        background-color: #2B343C; //#2B343C
+        text-align: center;
+        line-height: rem(88);
+        i {
+          width: rem(48);
+          height: rem(48);
+          font-size: rem(48);
+          color: #80858A;
+          text-align: center;
+        }
+      }
+    }
+    .right {
+      //margin-top: rem(12);
+      float: left;
+      .total {
+        margin-top: rem(22);
+        float: left;
+        color: #919396;
+        font-size: rem(32);
+        font-weight: 700;
+        line-height: rem(68);
+        padding-right: rem(24);
+        padding-left: rem(18);
+        border-right: 1px solid #fff; //#2C343C
+      }
+      .standard {
+        margin-top: rem(22);
+        margin-left: rem(24);
+        float: left;
+        font-size: rem(32);
+        color: #727579;
+        line-height: rem(68);
+      }
+      .send {
+        float: right;
+        background-color: #2B333B;
+        text-align: center;
+        width: rem(213);
+        height: rem(112);
+        margin-left: rem(30);
+        span {
+          font-size: rem(24);
+          font-weight: 700;
+          line-height: rem(112);
+          color: #979A9C;
+        }
+      }
+    }
+
+  }
+}

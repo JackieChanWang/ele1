@@ -1,0 +1,167 @@
+@function rem ( $px ) {
+  @return $px  / 46.875 +  rem;
+}
+
+#content {
+  .content {
+    overflow: hidden;
+    border-top: 2px solid #E5E5E5;
+    .side {
+      float: left;
+      height: rem(1000);
+      width: rem(160);
+      overflow: auto;
+      background-color: #F3F5F7;
+      ul {
+        li {
+          padding: rem(0) rem(24);
+          width: rem(112);
+          height: rem(108);
+          font-size: rem(24);
+          color: #07111B;
+          font-weight: 200;
+          p {
+            border-bottom: 1px solid rgba(7, 17, 27, .1);
+            line-height: rem(108);
+          }
+          img {
+            float: left;
+          }
+        }
+        li:nth-child(2) {
+          background-color: #fff;
+          p {
+            margin: 0 auto;
+            padding-top: rem(27);
+            line-height: rem(25);
+            border: none;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .sidec {
+      float: left;
+      height: rem(1000);
+      overflow: auto;
+      .title {
+        padding-left: rem(28);
+        border-left: 5px solid #D9DDE1;
+        width: rem(558);
+        height: rem(52);
+        background-color: #F3F5F7;
+        font-size: rem(24);
+        line-height: rem(52);
+        color: #969CA2;
+        font-weight: 600;
+      }
+      .wrap {
+        position: relative;
+        overflow: hidden;
+        padding: rem(36) rem(36) rem(26) rem(36);
+        img {
+          float: left;
+        }
+        ul {
+          float: left;
+          margin-left: rem(20);
+          font-size: rem(28);
+          li:first-child {
+            padding-top: rem(4);
+            color: rgb(7, 17, 27);
+            line-height: rem(28);
+            font-weight: 600;
+          }
+          li {
+            font-size: rem(20)/rem(28);
+            margin-bottom: rem(16);
+            color: rgb(147, 153, 159);
+          }
+          li:last-child {
+            p {
+              float: left;
+            }
+            p:nth-child(1) {
+              color: rgb(240, 20, 20);
+              font-weight: normal/900;
+            }
+            p:nth-child(2) {
+              margin-left: rem(16);
+            }
+            p:nth-child(3) {
+              position: absolute;
+              bottom: rem(13);
+              right: rem(36);
+              width: rem(48);
+              height: rem(48);
+              text-align: center;
+              color: #fff;
+              line-height: rem(48);
+              float: right;
+              border-radius: 50%;
+              font-size: rem(48);
+              background-color: #00A0DC;
+            }
+          }
+        }
+      }
+      .wrap1 {
+        position: relative;
+        padding: rem(0) rem(36) rem(26) rem(36);
+        div {
+          overflow: hidden;
+          border-bottom: 1px solid #E2E5E8;
+          img {
+            float: left;
+          }
+          ul {
+            float: left;
+            margin-left: rem(20);
+            margin-bottom: rem(36);
+            font-size: rem(28);
+            li:first-child {
+              padding-top: rem(4);
+              color: rgb(7, 17, 27);
+              line-height: rem(28);
+              font-weight: 600;
+            }
+            li {
+              font-size: rem(20)/rem(28);
+              margin-bottom: rem(16);
+              color: rgb(147, 153, 159);
+            }
+            li:last-child {
+              p {
+                float: left;
+              }
+              p:nth-child(1) {
+                color: rgb(240, 20, 20);
+                font-weight: normal/900;
+              }
+              p:nth-child(2) {
+                margin-left: rem(16);
+              }
+              p:nth-child(3) {
+                position: absolute;
+                bottom: rem(53);
+                right: rem(36);
+                width: rem(48);
+                height: rem(48);
+                text-align: center;
+                color: #fff;
+                line-height: rem(48);
+                float: right;
+                border-radius: 50%;
+                font-size: rem(48);
+                background-color: #00A0DC;
+              }
+            }
+          }
+        }
+      }
+      .first {
+        padding-top: rem(36);
+      }
+    }
+  }
+}
